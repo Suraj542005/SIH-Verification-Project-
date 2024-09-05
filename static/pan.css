@@ -1,0 +1,100 @@
+/* body {
+    width: 70vw;
+    border: 2px solid red;
+
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+#pan
+{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#panpng{
+    display: inline;
+    height: 70px;
+}
+#pantitle{
+    display: inline;
+}
+/* Container for each form */
+.form-container {
+    width: 60vw;
+    /* border: 2px solid red; */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    /* width: 300px; */
+
+}
+
+/* Styling for headings */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+    color: #333;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    background-color: #E5E5E5;
+}
+
+/* Input field hover effect */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Styling for submit button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #91BDEC;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

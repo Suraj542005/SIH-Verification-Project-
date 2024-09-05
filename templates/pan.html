@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Details Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/pan.css">
+
+</head>
+<body style="color: white;">
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Verification Desk</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        verifications
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="/Aadharcard.html">Aadhaar verification</a></li>
+                      <li><a class="dropdown-item" href="/pan.html">PAN varifiction</a></li>
+                      <li><a class="dropdown-item" href="/Marksheet.html">Mark sheet verification</a></li>
+                    </ul>
+                  </li>
+
+<!-- 
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li> -->
+              </ul>
+              <!-- <span class="navbar-text">
+                Navbar text with an inline element
+              </span> -->
+            </div>
+          </div>
+      </nav>
+
+   <div id="pan"> <!-- PAN Card Details Form -->
+    <div class="form-container">
+        <img src="/static/images/pan-card-agency-500x500.png" id="panpng">
+        <h2 id="pantitle">PAN Card Details Form</h2>
+        <form id="panForm" onsubmit="return validatePanForm()">
+            <!-- PAN Number Field -->
+            <div class="form-group">
+                <label for="panNumber">PAN Number:</label>
+                <input type="text" id="panNumber" name="panNumber" required placeholder="Enter your PAN number" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+            </div>
+
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="panName">Full Name:</label>
+                <input type="text" id="panName" name="panName" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Father's Name Field -->
+            <div class="form-group">
+                <label for="panFatherName">Father's Name:</label>
+                <input type="text" id="panFatherName" name="panFatherName" required placeholder="Enter your father's name">
+            </div>
+
+            <!-- Date of Birth Field -->
+            <div class="form-group">
+                <label for="panDob">Date of Birth:</label>
+                <input type="date" id="panDob" name="panDob" required>
+            </div>
+
+            <!-- PAN Card Photo Upload Field -->
+            <div class="form-group">
+                <label for="panPhoto">Upload PAN Card Photo:</label>
+                <input type="file" id="panPhoto" name="panPhoto" accept="image/*" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div></div>   
+   
+
+    <script src="pan.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Verification Page Styles */
+.verification-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/static/Images/WhatsApp Image 2024-09-04 at 10.08.36_488e6487.jpg') no-repeat center center/cover;
+    background-color: #2e2eb3; /* Fallback color */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(30deg, #333, #555);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.logo1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #18ff27;
+    transform: translateY(-2px);
+}
+
+/* Verification Section Styles */
+.verification {
+    background: rgb(226, 231, 222);
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.verification h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.verification p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.verification form {
+    display: flex;
+    flex-direction: column;
+}
+
+.verification label {
+    margin: 10px 0 5px;
+    color: #333;
+    display: block;
+}
+
+.verification input,
+.verification select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.verification input:focus {
+    border-color: #1a18b9;
+    box-shadow: 0 0 8px rgba(26, 24, 185, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.verification input::placeholder,
+.verification select::placeholder {
+    color: rgba(25, 23, 23, 0.721);
+    text-shadow: 0 0 5px rgba(16, 16, 16, 0.3);
+    opacity: 1;
+}
+
+.verification button {
+    padding: 10px;
+    background: linear-gradient(135deg, #6967bd, #1a18b9);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.verification button:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #5b59b9, #1412a5);
+}
+
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #444, #666);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #f4f4f9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e6e6e6;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 8px 10px;
+        margin-left: 10px;
+    }
+
+    .verification h1 {
+        font-size: 30px;
+    }
+
+    .verification p {
+        font-size: 16px;
+    }
+}
